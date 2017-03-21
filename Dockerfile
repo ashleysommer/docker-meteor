@@ -8,7 +8,7 @@ WORKDIR /home/meteor
 
 # Install git, curl
 RUN apt-get update && \
-   apt-get install -y git curl make g++ && \
+   apt-get install -y git curl make g++ bzip2 && \
    (curl https://deb.nodesource.com/setup_4.x | bash) && \
    apt-get install -y nodejs jq && \
    apt-get clean && \
